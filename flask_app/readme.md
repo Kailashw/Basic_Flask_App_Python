@@ -1,10 +1,10 @@
-Steps to Follow to set up minimal flask app in Windows Machine.
-1. Create a project folder and a 'venv' folder within,
+Steps to Follow to set up 'Hello World' flask app in Windows Machine.
+1. The following commands should create a project folder and install virtual env in it.
     mkdir myproject
     cd myproject
-    py -3 -m venv venv
+    py -m venv venv
 2. Activate the environment (the path to virtual environment should be visible under the result of previous command).
-    Pathto\venv\Scripts\activate 
+    .\venv\Scripts\activate 
 3. pip install Flask
 4. create a "hello.py" file and add following code under it.
     from flask import Flask
