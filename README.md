@@ -13,7 +13,7 @@
 
     @app.route('/')
     def hello_world():
-        return 'Hello, World!' ```
+        return 'Hello, World!' 
 4. in command prompt run following command.
     - set FLASK_APP = "app.py"
 5. execute the following command to run your first flasker app.
