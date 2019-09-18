@@ -6,7 +6,7 @@
 2. Activate the environment (the path to virtual environment should be visible under the result of previous command).
     .\venv\Scripts\activate 
 3. pip install Flask
-4. create a "hello.py" file and add following code under it.
+4. create a "main.py" file and add following code under it.
     from flask import Flask
     app = Flask(__name__)
 
