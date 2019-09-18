@@ -6,7 +6,7 @@
 2. Activate the environment (the path to virtual environment should be visible under the result of previous command).
     .\venv\Scripts\activate 
 3. pip install Flask
-4. create a "main.py" file and add following code under it.
+4. create a "app.py" file and add following code under it.
     from flask import Flask
     app = Flask(__name__)
 
@@ -14,7 +14,7 @@
     def hello_world():
         return 'Hello, World!'
 4. in command prompt run following command.
-    set FLASK_APP = "main.py"
+    set FLASK_APP = "app.py"
 5. execute the following command to run your first flasker app.
     python -m flask run 
     python -m flask run=0.0.0.0 (to run on, externally visible server)
