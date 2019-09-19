@@ -1,4 +1,4 @@
-﻿# How to Flask app in Windows Machine.
+﻿# How to create Flask app in Windows Machine.
 1. The following commands should create a project folder and install virtual env in it.
 
     - mkdir myproject
