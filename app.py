@@ -3,8 +3,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return '<h1>Hello, World!</h1>'
+    return '<h1>Hello, Azure!</h1>'
 
 @app.route('/hi')
 def hi():
-    return '<h1>Hello, Kailash!</h1>'
+    return '<h1>Hello, CloudThing!</h1>'
