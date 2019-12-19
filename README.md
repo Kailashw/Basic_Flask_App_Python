@@ -9,3 +9,8 @@
 5. execute the following command to run the app.
     - python -m flask run 
     - python -m flask run=0.0.0.0 (to run on, externally visible server)
+
+
+```
+    Note : Migration Folder has the data and scripts used to upload data to mongo atlas
+```
