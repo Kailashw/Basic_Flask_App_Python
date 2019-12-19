@@ -1,10 +1,8 @@
-from flask import Flask
-app = Flask(__name__)
+# -*- coding: utf-8 -*-
 
-@app.route('/')
-def hello_world():
-    return '<h1>Hello, Azure!</h1>'
 
-@app.route('/hi')
-def hi():
-    return '<h1>Hello, CloudThing!</h1>'
+from runapp import runapp
+
+if __name__ == '__main__':
+    # Running app in debug mode
+    runapp.run(debug=True)
