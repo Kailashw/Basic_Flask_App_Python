@@ -13,6 +13,7 @@ import imp
 db = client.pokedox
 # Select the collection
 collection = db.pokemons
+categories_collection = db.categories
 
 @runapp.route("/")
 def welcome():
@@ -35,6 +36,25 @@ def fetch_pokemons():
        """
     try:
         data = list(collection.find())
+        # Return all the records as query string parameters are not available
+        if len(data) > 0:
+            # Prepare response if the users are found
+            return dumps(data)
+        else:
+            # Return empty array if no users are found
+            return jsonify([])
+    except:
+        # Error while trying to fetch the resource
+        # Add message for debugging purpose
+        return "", 500
+
+@runapp.route("/api/v1/categories", methods=['GET'])
+def fetch_categories():
+    """
+       Function to fetch the pokemons.
+       """
+    try:
+        data = list(categories_collection.find())
         # Return all the records as query string parameters are not available
         if len(data) > 0:
             # Prepare response if the users are found
